@@ -1,0 +1,121 @@
+.Hero,
+.InformMessages .InformMessage,
+.CategoryLink,
+.Deleted,
+.ActivateSlider,
+.RegardingActions .ActionButton,
+.DataList a.Delete,
+.SearchForm .InputBox,
+.FlyoutMenu,
+.MenuItems,
+.RegardingEvent,
+code, pre {
+  @include border-radius(0);
+}
+
+.BlockTitle {
+  font-weight: normal;
+}
+
+.PageDescription {
+  color: #888;
+  margin: 8px;
+}
+
+.CategoryBox h2 {
+  margin: 20px 8px 8px;
+  a {
+    color: #aaa;
+  }
+}
+
+.HomepageTitle {
+  margin: 0 8px;
+  .AdminCheck {
+    padding: 0;
+  }
+}
+
+.Pager {
+  font-size: 18px;
+}
+
+.ProfileOptions {
+  font-weight: bold;
+}
+
+.DataTable {
+  td {
+    border-style: dotted;
+  }
+  > .Item {
+    border-style: dotted !important;
+    padding: 12px 8px;
+  }
+  .Item .Item {
+    border: none !important;
+  }
+  .Title {
+    color: #777;
+    a {
+      font-size: 18px;
+      color: #333;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+
+.Meta {
+  color: #000;
+}
+
+.MItem {
+  color: #000;
+  margin: 0 8px;
+  padding: 0;
+  &:last-child {
+    border: none;
+  }
+  a {
+    color: #000;
+  }
+}
+
+.HasNew {
+  @include border-radius(0);
+  background: #F09609;
+  color: #FFF;
+  font-weight: normal;
+}
+
+.Tag {
+  @include border-radius(0);
+  background: #dfdfdf;
+  color: #000;
+  &.Tag-Banned {
+    color: #FFF;
+    background-color: #E51400;
+  }
+}
+
+.FormWrapper,
+body.Profile.EditMode #Content form,
+.ActivityComment {
+  background: #dfdfdf;
+  padding: 5px;
+}
+
+.ActivityComment .Title {
+  color: #333;
+}
+
+.Bullet {
+  color: #aaa;
+}
+
+a.ChangePicture:hover {
+  color: #FFF;
+}

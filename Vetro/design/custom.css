@@ -1,0 +1,511 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff")
+}
+
+body, .SiteTitle, h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif
+}
+
+a {
+    color: #1D5689
+}
+
+a:hover {
+    color: #003467;
+    text-decoration: none
+}
+
+blockquote {
+    margin: 1em 0 1em 40px;
+    padding: 1ex 16px;
+    margin: 1em 0;
+    border-left: 4px solid rgba(0, 0, 0, 0.1);
+    background: #dfdfdf;
+    padding: 5px
+}
+
+.Row {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.Banner {
+    position: relative;
+    min-height: 98px;
+    text-align: left
+}
+
+.SiteTitle {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px
+}
+
+.SiteTitle a {
+    color: #000
+}
+
+span.SiteTagline {
+    color: #666
+}
+
+.Banner .Row {
+    position: relative
+}
+
+.AdSpace {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    line-height: 90px;
+    width: 468px;
+    background: #ddd;
+    border: 4px solid #eee;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-align: center;
+    color: #777
+}
+
+#Head {
+    color: #fff;
+    background: #ff0097;
+    padding: 0
+}
+
+#Head .SiteMenu a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFF;
+    padding: 15px 0;
+    margin: 0 30px;
+    display: inline-block
+}
+
+#Head .SiteMenu a:hover {
+    color: #E6E6E6;
+    text-decoration: none
+}
+
+#Head .SiteMenu a:first-child {
+    margin-left: 0
+}
+
+#Head .SiteSearch {
+    top: 12px;
+    right: 0
+}
+
+#Head .SiteSearch .InputBox {
+    font-size: 13px
+}
+
+#Head .SiteSearch .Button {
+    top: 6px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
+#Head .SiteSearch .Button:focus, #Head .SiteSearch .Button:active, #Head .SiteSearch .Button:visited, #Head .SiteSearch .Button:hover {
+    background-position: 0 -196px
+}
+
+.BreadcrumbsWrapper {
+    font-size: 11px;
+    border-bottom: 1px dotted #eee;
+    padding: 6px 0;
+    margin-bottom: 20px;
+    color: #aaa
+}
+
+.Breadcrumbs a {
+    color: #777
+}
+
+.Alert {
+    font-size: 80%;
+    background: #F09609;
+    color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.Alert a {
+    color: #fff
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff")
+}
+
+body, .SiteTitle, h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif
+}
+
+a {
+    color: #1D5689
+}
+
+a:hover {
+    color: #003467;
+    text-decoration: none
+}
+
+blockquote {
+    margin: 1em 0 1em 40px;
+    padding: 1ex 16px;
+    margin: 1em 0;
+    border-left: 4px solid rgba(0, 0, 0, 0.1);
+    background: #dfdfdf;
+    padding: 5px
+}
+
+.Hero, .InformMessages .InformMessage, .CategoryLink, .Deleted, .ActivateSlider, .RegardingActions .ActionButton, .DataList a.Delete, .SearchForm .InputBox, .FlyoutMenu, .MenuItems, .RegardingEvent, code, pre {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.BlockTitle {
+    font-weight: normal
+}
+
+.PageDescription {
+    color: #888;
+    margin: 8px
+}
+
+.CategoryBox h2 {
+    margin: 20px 8px 8px
+}
+
+.CategoryBox h2 a {
+    color: #aaa
+}
+
+.HomepageTitle {
+    margin: 0 8px
+}
+
+.HomepageTitle .AdminCheck {
+    padding: 0
+}
+
+.Pager {
+    font-size: 18px
+}
+
+.ProfileOptions {
+    font-weight: bold
+}
+
+.DataTable td {
+    border-style: dotted
+}
+
+.DataTable > .Item {
+    border-style: dotted !important;
+    padding: 12px 8px
+}
+
+.DataTable .Item .Item {
+    border: none !important
+}
+
+.DataTable .Title {
+    color: #777
+}
+
+.DataTable .Title a {
+    font-size: 18px;
+    color: #333
+}
+
+.DataTable .Title a:hover {
+    text-decoration: underline
+}
+
+.Meta {
+    color: #000
+}
+
+.MItem {
+    color: #000;
+    margin: 0 8px;
+    padding: 0
+}
+
+.MItem:last-child {
+    border: none
+}
+
+.MItem a {
+    color: #000
+}
+
+.HasNew {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #F09609;
+    color: #FFF;
+    font-weight: normal
+}
+
+.Tag {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #dfdfdf;
+    color: #000
+}
+
+.Tag.Tag-Banned {
+    color: #FFF;
+    background-color: #E51400
+}
+
+.FormWrapper, body.Profile.EditMode #Content form, .ActivityComment {
+    background: #dfdfdf;
+    padding: 5px
+}
+
+.ActivityComment .Title {
+    color: #333
+}
+
+.Bullet {
+    color: #aaa
+}
+
+a.ChangePicture:hover {
+    color: #FFF
+}
+
+.PanelInfo .Meta strong {
+    border: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: #F09609;
+    color: #FFF
+}
+
+.PanelInfo li {
+    background: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-style: dotted !important
+}
+
+.PanelInfo a {
+    color: #555
+}
+
+.PanelInfo a:hover {
+    text-decoration: underline
+}
+
+.PanelInfo .Active {
+    background: none
+}
+
+.PanelInfo .Active a {
+    color: #333
+}
+
+.Count {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.BoxFilter {
+    margin: 20px 0
+}
+
+.Box {
+    color: #888;
+    margin: 0 0 30px
+}
+
+.Box h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 6px 0
+}
+
+.Border {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.FlyoutMenu {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.MenuItems a:hover {
+    background-color: #1ba1e2 !important
+}
+
+.ac_over {
+    background: #1ba1e2
+}
+
+.ac_over strong {
+    background: #1891cb
+}
+
+.DismissMessage {
+    font-size: 13px;
+    text-align: left;
+    position: relative;
+    color: #FFF;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 10px 0;
+    padding: 10px
+}
+
+.DismissMessage.Info {
+    background: #1BA1E2;
+    border: 0px
+}
+
+.DismissMessage.Warning {
+    background: #E51400;
+    border: 0px
+}
+
+.DismissMessage.Box {
+    background: #fff8ce;
+    border: 0px solid #c5bea4;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: 0 0 10px
+}
+
+.DismissMessage a.Dismiss:hover {
+    border: none;
+    background: #333;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff
+}
+
+.CasualMessage {
+    background: #00ABA9;
+    border: 0px
+}
+
+.InfoMessage {
+    background: #1BA1E2;
+    border: 0px
+}
+
+.AlertMessage {
+    background: #F09609;
+    border: 0px
+}
+
+.WarningMessage {
+    background: #E51400;
+    border: 0px
+}
+
+.Info {
+    font-size: 13px;
+    background: #1BA1E2;
+    border: 0px;
+    border: 0px;
+    color: #FFF;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.Errors ul {
+    border: 0px !important;
+    background: #E51400 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+.Errors ul.li {
+    color: #fff !important;
+    background: #E51400 !important;
+    text-align: left
+}
+
+.NavButton {
+    background: #1ba1e2;
+    color: #fff;
+    font-weight: normal;
+    border: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
+    transition: background 2s
+}
+
+.NavButton:hover, .NavButton:focus, .NavButton:active {
+    background: #1891cb;
+    color: #fff
+}
+
+.Button {
+    background: #1ba1e2;
+    color: #fff;
+    font-weight: normal;
+    border: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
+    transition: background 2s
+}
+
+.Button:hover, .Button:focus, .Button:active {
+    background: #1891cb;
+    color: #fff
+}
+
+#Panel .BigButton {
+    margin: 20px 0
+}
+
+input.Button {
+    padding: 6px 12px
+}

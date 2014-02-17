@@ -1,0 +1,53 @@
+// Config
+$headColour: #ffffff;
+$headBackground: #ff0097;
+
+$buttonColour: #ffffff;
+$buttonBackground: #1ba1e2;
+$buttonBackgroundHover: #1891CB;
+
+// Config Dark
+//$headColour: #ffffff;
+//$headBackground: #5133ab;
+//	
+//$buttonColour: #ffffff;
+//$buttonBackground: #0a5bc4;
+//$buttonBackgroundHover: #094ab2;
+
+// Config Orgr
+//$headColour: #ffffff;
+//$headBackground: #00a600;
+//	
+//$buttonColour: #ffffff;
+//$buttonBackground: #dc572e;
+//$buttonBackgroundHover: #d24726;
+
+// Browser Hacks
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin border-radius($args...) {
+  -webkit-border-radius: $args;
+  -moz-border-radius: $args;
+  border-radius: $args;
+}
+
+@mixin box-shadow($args...) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
+
+//Includes
+@import "includes/_general";
+@import "includes/_head";
+@import "includes/_general";
+@import "includes/_vanilla";
+@import "includes/_panel";
+@import "includes/_dropdowns";
+@import "includes/_messages";
+@import "includes/_buttons";

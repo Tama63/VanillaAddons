@@ -1,0 +1,277 @@
+/* Colour Swatch */
+/* Mix it around */
+/* Body */
+body {
+    color: #404040;
+}
+
+/* Header and Nav */
+#Head {
+    background: #00ace9;
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.FlyoutMenu .Item {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.FlyoutMenu .Item:hover {
+    background-color: #00ace9 !important;
+}
+
+.FlyoutMenu .Item:hover .Meta {
+    color: #f6f6e8;
+}
+
+.FlyoutMenu .Item:hover b.Subject a,
+.FlyoutMenu .Item b.Subject a:hover {
+    color: #f6f6e8 !important;
+}
+
+.MenuItems a:hover {
+    background-color: #00ace9 !important;
+}
+
+.FlyoutMenu .Title:hover,
+.FlyoutMenu .Center:hover {
+    background-color: inherit !important;
+}
+
+/* Links and other misc html */
+a {
+    color: #00ace9;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: #00b5f6;
+}
+
+.Tag {
+    background: #4d4d4d;
+    padding: 2px 6px;
+}
+
+/* Buttons */
+.NavButton,
+.Button {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #00ace9;
+    text-shadow: none;
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    color: #f6f6e8;
+}
+
+.NavButton:focus,
+.Button:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    background: #00b5f6;
+}
+
+.NavButton:hover, .NavButton:focus,
+.Button:hover,
+.Button:focus {
+    color: #f6f6e8;
+    text-decoration: none;
+    background: #00b5f6;
+    border-color: transparent;
+}
+
+.Button.Primary {
+    background: #6a9a1f;
+}
+
+.Button.Primary:hover, .Button.Primary:focus {
+    background: #73a722;
+}
+
+.Button.Cancel {
+    background: #d43f3f;
+}
+
+.Button.Cancel:hover, .Button.Cancel:focus {
+    background: #e14343;
+}
+
+/* Sidebar */
+.Box h4 {
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.Count {
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Discussions */
+.DiscussionMeta,
+.CommentMeta {
+    position: relative;
+    left: 30px;
+}
+
+.DataList .Item {
+    border-bottom-width: 0px;
+}
+
+.Item-BodyWrap {
+    padding: 0px 0px 10px 35px;
+}
+
+.Item-BodyWrap .Item-Body {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    margin-top: 5px;
+    position: relative;
+    padding: 11px;
+    background: #FFFFFF;
+    border: #CCC solid 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.Item-BodyWrap .Item-Body:after {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 12px;
+    border-style: solid;
+    border-width: 0 10px 22px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+.Item-BodyWrap .Item-Body:before {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 11px;
+    border-style: solid;
+    border-width: 0 11px 22px;
+    border-color: #CCC transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+}
+
+.Item-BodyWrap .Item-Body:hover {
+    border: #999 solid 1px;
+}
+
+.Item-BodyWrap .Item-Body:hover:before {
+    border-color: #999 transparent;
+}
+
+.ItemDiscussion .Item-BodyWrap {
+    position: relative;
+    bottom: 10px;
+}
+
+h2.CommentHeading {
+    color: #4d4d4d;
+}
+
+.Item.Checked {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+tr.Item .BigCount .Wrap {
+    background: #00b5f6;
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    padding: 8px 4px 8px 4px;
+    color: #FFF;
+}
+
+/* Pagers */
+.Pager {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.Pager span, .Pager a {
+    float: left;
+    padding: 4px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-left-width: 0;
+    color: #3498DB;
+    margin: 0px;
+}
+
+.Pager span:hover, .Pager a:hover {
+    background-color: #f5f5f5;
+}
+
+.Pager .Previous {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-left-width: 1px;
+}
+
+.Pager .Next {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.Pager .Highlight {
+    color: #4d4d4d;
+    background-color: #f5f5f5;
+}
+
+#vanilla_discussion_index #PagerBefore {
+    position: relative;
+    bottom: 20px;
+}
+
+/* Alerts */
+.DismissMessage, .Errors ul {
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

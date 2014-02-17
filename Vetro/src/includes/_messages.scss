@@ -1,0 +1,70 @@
+.DismissMessage {
+  font-size: 13px;
+  text-align: left;
+  position: relative;
+  color: #FFF;
+  border: none;
+  @include border-radius(0);
+  margin: 10px 0;
+  padding: 10px;
+  &.Info {
+    background: #1BA1E2;
+    border: 0px;
+  }
+  &.Warning {
+    background: #E51400;
+    border: 0px;
+  }
+  &.Box {
+    background: #fff8ce;
+    border: 0px solid #c5bea4;
+    @include box-shadow(none);
+    margin: 0 0 10px; /* Make sure that .Box definitions don't override the base DismissMessage margin! */
+  }
+  a.Dismiss:hover {
+    border: none;
+    background: #333;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+  }
+}
+
+.CasualMessage {
+  background: #00ABA9;
+  border: 0px;
+}
+
+.InfoMessage {
+  background: #1BA1E2;
+  border: 0px;
+}
+
+.AlertMessage {
+  background: #F09609;
+  border: 0px;
+}
+
+.WarningMessage {
+  background: #E51400;
+  border: 0px;
+}
+
+.Info {
+  font-size: 13px;
+  background: #1BA1E2;
+  border: 0px;
+  border: 0px;
+  color: #FFF;
+  @include border-radius(0);
+}
+
+.Errors ul {
+  border: 0px !important;
+  background: #E51400 !important;
+  @include border-radius(0);
+  &.li {
+    color: #fff !important;
+    background: #E51400 !important;
+    text-align: left;
+  }
+}

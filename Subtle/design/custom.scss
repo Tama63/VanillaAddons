@@ -1,0 +1,283 @@
+/* Colour Swatch */
+$primary: #00ACE9;
+$primaryLight: #00B5F6;
+
+$dark: #404040;
+$darkLight: #4D4D4D;
+
+$warning: #D43F3F;
+$warningLight: #E14343;
+
+$success: #6A9A1F;
+$successLight: #73A722;
+
+$neutral: #F6F6E8;
+
+/* Mix it around */
+@mixin transitions {
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+@mixin insetBorder {
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/* Body */
+body {
+  color: $dark;
+}
+
+/* Header and Nav */
+#Head {
+  background: $primary;
+  @include insetBorder;
+}
+
+.FlyoutMenu .Item {
+  @include transitions;
+  &:hover {
+    background-color: $primary !important;
+  }
+
+  &:hover .Meta {
+    color: $neutral;
+  }
+
+  &:hover b.Subject a,
+  b.Subject a:hover {
+    color: $neutral !important;
+  }
+}
+
+.MenuItems a {
+  &:hover {
+    background-color: $primary !important;
+  }
+}
+
+.FlyoutMenu .Title:hover,
+.FlyoutMenu .Center:hover {
+  background-color: inherit !important;
+}
+
+/* Links and other misc html */
+a {
+  color: $primary;
+  @include transitions;
+  &:hover {
+    color: $primaryLight;
+  }
+}
+
+.Tag {
+  background: $darkLight;
+  padding: 2px 6px;
+}
+
+/* Buttons */
+.NavButton,
+.Button {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  @include radius(5px);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: $primary;
+  text-shadow: none;
+  @include insetBorder;
+  color: $neutral;
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    background: $primaryLight;
+  }
+  &:hover, &:focus {
+    color: $neutral;
+    text-decoration: none;
+    background: $primaryLight;
+    border-color: transparent;
+  }
+}
+
+.Button.Primary {
+  background: $success;
+  &:hover, &:focus {
+    background: $successLight;
+  }
+}
+
+.Button.Cancel {
+  background: $warning;
+  &:hover, &:focus {
+    background: $warningLight;
+  }
+}
+
+/* Sidebar */
+.Box {
+
+  h4 {
+    text-transform: uppercase;
+    color: $darkLight;
+  }
+}
+
+.Count {
+  @include insetBorder;
+}
+
+/* Discussions */
+.DiscussionMeta,
+.CommentMeta {
+  position: relative;
+  left: 30px;
+}
+
+.DataList .Item {
+  border-bottom-width: 0px;
+}
+
+.Item-BodyWrap {
+  padding: 0px 0px 10px 35px;
+  .Item-Body {
+    @include transitions;
+    margin-top: 5px;
+    position: relative;
+    padding: 11px;
+    background: #FFFFFF;
+    border: #CCC solid 1px;
+    @include radius(5px);
+    &:after {
+      content: "";
+      position: absolute;
+      top: -22px;
+      left: 12px;
+      border-style: solid;
+      border-width: 0 10px 22px;
+      border-color: #FFFFFF transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -23px;
+      left: 11px;
+      border-style: solid;
+      border-width: 0 11px 22px;
+      border-color: #CCC transparent;
+      display: block;
+      width: 0;
+      z-index: 0;
+    }
+    &:hover {
+      border: #999 solid 1px;
+      &:before {
+        border-color: #999 transparent;
+      }
+    }
+  }
+
+}
+
+.ItemDiscussion .Item-BodyWrap {
+  position: relative;
+  bottom: 10px;
+}
+
+h2.CommentHeading {
+  color: $darkLight;
+}
+
+.Item.Checked {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+tr.Item {
+  .BigCount {
+    .Wrap {
+      background: $primaryLight;
+      @include insetBorder;
+      padding: 8px 4px 8px 4px;
+      color: #FFF;
+
+    }
+  }
+}
+
+/* Pagers */
+.Pager {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  @include radius(4px);
+  span, a {
+    float: left;
+    padding: 4px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-left-width: 0;
+    color: #3498DB;
+    margin: 0px;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .Previous {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-left-width: 1px;
+  }
+  .Next {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .Highlight {
+    color: $darkLight;
+    background-color: #f5f5f5;
+  }
+}
+
+#vanilla_discussion_index #PagerBefore {
+  position: relative;
+  bottom: 20px;
+}
+
+/* Alerts */
+.DismissMessage {
+  @include insetBorder;
+  @include radius(3px);
+}
+
+.Errors ul {
+  @extend .DismissMessage;
+}
+
+		

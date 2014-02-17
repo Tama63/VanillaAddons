@@ -1,0 +1,41 @@
+.NavButton {
+  background: $buttonBackground;
+  color: $buttonColour;
+  font-weight: normal; /* Begin Normalize from Base Vanilla */
+  border: 0px;
+  @include border-radius(0);
+  text-shadow: none;
+  @include box-shadow(none);
+  @include transition(background 2s);
+  &:hover,
+  &:focus,
+  &:active {
+    background: $buttonBackgroundHover;
+    color: $buttonColour;
+  }
+}
+
+.Button {
+  background: $buttonBackground;
+  color: $buttonColour;
+  font-weight: normal; /* Begin Normalize from Base Vanilla */
+  border: 0px;
+  @include border-radius(0);
+  text-shadow: none;
+  @include box-shadow(none);
+  @include transition(background 2s);
+  &:hover,
+  &:focus,
+  &:active {
+    background: $buttonBackgroundHover;
+    color: $buttonColour;
+  }
+}
+
+#Panel .BigButton {
+  margin: 20px 0;
+}
+
+input.Button {
+  padding: 6px 12px;
+}

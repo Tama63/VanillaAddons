@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body,
+.SiteTitle,
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #1D5689;
+  &:hover {
+    color: #003467;
+    text-decoration: none;
+  }
+}
+
+blockquote {
+  margin: 1em 0 1em 40px;
+  padding: 1ex 16px;
+  margin: 1em 0;
+  border-left: 4px solid rgba(0, 0, 0, 0.1);
+  background: #dfdfdf;
+  padding: 5px;
+}

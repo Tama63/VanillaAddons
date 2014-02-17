@@ -1,0 +1,18 @@
+.Border {
+  @include border-radius(0);
+}
+
+.FlyoutMenu {
+  @include border-radius(0);
+}
+
+.MenuItems a:hover {
+  background-color: $buttonBackground !Important;
+}
+
+.ac_over {
+  background: $buttonBackground;
+  strong {
+    background: $buttonBackgroundHover;
+  }
+}

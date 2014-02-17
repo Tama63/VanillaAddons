@@ -1,0 +1,83 @@
+/*Vetro for Vanilla 2.1a by Chris Ireland - Orange and Green*/
+/* - Based off Bittersweet and Metro */
+
+/** Custom Master View Stuff **/
+#Head {
+    color: #FFF;
+    background: #00A600;
+    padding: 0;
+}
+
+/*Nav Button */
+
+.NavButton {
+    background: #DC572E;
+    color: #FFF;
+    font-weight: normal; /* Begin Normalize from Base Vanilla */
+    border: 0px;
+    border-radius: 0px;
+    text-shadow: none;
+    box-shadow: none;
+    transition: background 2s;
+}
+
+.NavButton:hover,
+.NavButton:focus,
+.NavButton:active {
+    background: #D24726;
+    color: #FFF;
+}
+
+.NavButton:focus,
+.NavButton:active {
+    background: #D24726;
+    color: #FFF;
+}
+
+.MenuItems a:hover {
+    background-color: #DC572E !Important;
+}
+
+.ac_over {
+    background: #DC572E;
+}
+
+.ac_over strong {
+    background: #D24726;
+}
+
+/** Vanilla Contents **/
+
+/* Big Button */
+.ButtonGroup .Button,
+#Content input.Button,
+.Button {
+    background: #DC572E;
+    color: #FFF;
+    font-weight: normal; /* Begin Normalize from Base Vanilla */
+    border: 0px;
+    border-radius: 0px;
+    text-shadow: none;
+    box-shadow: none;
+    transition: background 2s;
+}
+
+.ButtonGroup.Open .Button.Handle,
+#Content input.Button:hover,
+#Content input.Button:focus,
+#Content input.Button:active,
+.Button:hover,
+.Button:focus,
+.Button:active {
+    background: #D24726;
+    color: #FFF;
+}
+
+.ButtonGroup.Open .Button.Handle,
+#Content input.Button:focus,
+#Content input.Button:active,
+.Button:focus,
+.Button:active {
+    background: #D24726;
+    color: #FFF;
+}

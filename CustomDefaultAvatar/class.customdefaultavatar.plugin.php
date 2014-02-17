@@ -6,7 +6,7 @@
  * @author Chris Ireland
  * @license GNU GPLv2
  */
- 
+
 // Define the plugin:
 $PluginInfo['customdefaultavatar'] = array(
     "Name" => "Custom Default Forum Avatar",
@@ -18,10 +18,10 @@ $PluginInfo['customdefaultavatar'] = array(
     "SettingsPermission" => "Garden.Settings.Manage",
     "SettingsUrl" => "/settings/customdefaultavatar"
 );
- 
+
 class CustomDefaultAvatarPlugin extends Gdn_Plugin
 {
- 
+
     /**
      * Creates a settings page
      *
@@ -32,7 +32,7 @@ class CustomDefaultAvatarPlugin extends Gdn_Plugin
         $Sender->Permission("Garden.Settings.Manage");
         $Sender->SetData("Title", T("Custom Default Forum Avatar"));
         $Sender->AddSideMenu("dashboard/settings/plugins");
- 
+
         $Conf = new ConfigurationModule($Sender);
         $Conf->Initialize(array(
             "Plugins.CustomDefaultAvatarPlugin.ProfileUrl" => array(
@@ -56,12 +56,12 @@ class CustomDefaultAvatarPlugin extends Gdn_Plugin
                 "LabelCode" => T("Hash usernames with md5"),
                 "Default" => "0"
             )
- 
+
         ));
- 
+
         $Conf->RenderAll();
     }
- 
+
     /**
      * Override Profile Pages
      *
@@ -72,27 +72,27 @@ class CustomDefaultAvatarPlugin extends Gdn_Plugin
     {
         if (!$Sender->User->Photo) {
             $username = GetValue("Name", $Sender->User);
- 
+
             // A fall-back for deleted users
             if ($username == "[Deleted User]") {
                 $username = C("Plugins.CustomDefaultAvatarPlugin.Deleted", "Steve");
             }
- 
+
             // Md5
-            if(C("Plugins.CustomDefaultAvatarPlugin.md5", 0) == 1) {
+            if (C("Plugins.CustomDefaultAvatarPlugin.md5", 0) == 1) {
                 $username = md5($username);
             }
- 
+
             // Handle Url
             $url = C("Plugins.CustomDefaultAvatarPlugin.ProfileUrl", "https://minotar.net/avatar/%user%/176.png");
             $url = str_replace("%user%", $username, $url);
- 
+
             $Sender->User->Photo = $url;
         }
     }
 }
- 
- 
+
+
 if (!function_exists("UserPhotoDefaultUrl")) {
     /**
      * Overwrite any other instances
@@ -104,22 +104,22 @@ if (!function_exists("UserPhotoDefaultUrl")) {
     function UserPhotoDefaultUrl($User, $Options = array())
     {
         $username = GetValue("Name", $User);
- 
+
         // A fall-back for deleted users
         if ($username == "[Deleted User]") {
             $username = C("Plugins.CustomDefaultAvatarPlugin.Deleted", "Steve");
         }
- 
+
         // Md5
-        if(C("Plugins.CustomDefaultAvatarPlugin.md5", 0) == 1) {
+        if (C("Plugins.CustomDefaultAvatarPlugin.md5", 0) == 1) {
             $username = md5($username);
         }
- 
+
         // Handle Url
         $url = C("Plugins.CustomDefaultAvatarPlugin.ProfileUrl", "https://minotar.net/avatar/%user%/48.png");
         $url = str_replace("%user%", $username, $url);
- 
- 
+
+
         return $url;
     }
 }

@@ -1,0 +1,107 @@
+.Row {
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Banner {
+  position: relative;
+  min-height: 98px;
+  text-align: left;
+}
+
+.SiteTitle {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 100px;
+  a {
+    color: #000;
+  }
+}
+
+span.SiteTagline {
+  color: #666;
+}
+
+.Banner .Row {
+  position: relative;
+}
+
+.AdSpace {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  line-height: 90px;
+  width: 468px;
+  background: #ddd;
+  border: 4px solid #eee;
+  @include border-radius(0);
+  text-align: center;
+  color: #777;
+}
+
+#Head {
+  color: $headColour;
+  background: $headBackground;
+  padding: 0;
+  .SiteMenu a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFF;
+    padding: 15px 0;
+    margin: 0 30px;
+    display: inline-block;
+  }
+  .SiteMenu {
+    a {
+      &:hover {
+        color: #E6E6E6;
+        text-decoration: none;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .SiteSearch {
+    top: 12px;
+    right: 0;
+    .InputBox {
+      font-size: 13px;
+    }
+    .Button {
+      top: 6px;
+      @include transition(none);
+      &:focus,
+      &:active,
+      &:visited,
+      &:hover {
+        background-position: 0 -196px;
+      }
+    }
+  }
+}
+
+.BreadcrumbsWrapper {
+  font-size: 11px;
+  border-bottom: 1px dotted #eee;
+  padding: 6px 0;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.Breadcrumbs a {
+  color: #777;
+}
+
+.Alert {
+  font-size: 80%;
+  background: #F09609;
+  color: #fff;
+  @include border-radius(0);
+  a {
+    color: #fff;
+  }
+}

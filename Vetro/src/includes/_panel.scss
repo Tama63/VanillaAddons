@@ -1,0 +1,44 @@
+.PanelInfo {
+  .Meta strong {
+    border: 0px;
+    @include border-radius(0);
+    background: #F09609;
+    color: #FFF;
+  }
+  li {
+    background: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-style: dotted !important;
+  }
+  a {
+    color: #555;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .Active {
+    background: none;
+    a {
+      color: #333;
+    }
+  }
+}
+
+.Count {
+  @include border-radius(0);
+}
+
+.BoxFilter {
+  margin: 20px 0;
+}
+
+.Box {
+  color: #888;
+  margin: 0 0 30px;
+  h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 6px 0;
+  }
+} 
