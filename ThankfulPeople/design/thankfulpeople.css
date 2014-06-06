@@ -1,0 +1,51 @@
+/**
+ * CSS Thankful People
+ *
+ * @author Jerl Liandri
+ * @author Chris Ireland <ireland63@gmal.com>
+ * @license MIT <opensource.org/licenses/MIT> & X.Net <http://opensource.org/licenses/xnet.php>
+ */
+
+div.ThankedByBox {
+    font-size: 84.6%;
+    line-height: 130%;
+}
+
+div.ThankedByBox > span.ThankedBy {
+    margin-right: 5px;
+}
+
+div.ThankedByBox > span.ThankedBy:after {
+    content: ":";
+}
+
+div.ThankedByBox > a:after,
+div.ThankedByBox span.details a:after {
+    content: ", ";
+}
+
+div.ThankedByBox span.details a.Last:after,
+div.ThankedByBox > a:last-child:after,
+div.ThankedByBox span.details > a:last-child:after {
+    content: ".";
+}
+
+span.re-collapse a:after {
+    content: "" !important;
+}
+
+div.ThankedByBox > span.ThankedBy > span:before {
+    content: "(";
+}
+
+div.ThankedByBox > span.ThankedBy > span:after {
+    content: ")";
+}
+
+span.Thank,
+span.UnThank {
+    margin-left: 8px;
+    margin-right: 8px;
+    whitespace: nowrap;
+"
+}
