@@ -46,7 +46,7 @@
         // Scrollbar Fix, assembled from StackOverflow
         $(window).scroll(function () {
             if (isPageScrolling()) {
-                $('head').append('<link rel="stylesheet" href="//cdn.tama63.co.uk/van/scrollbar.css" type="text/css" />');
+                $('head').append('<link rel="stylesheet" href="./themes/FlatVI/design/scrollbar.css" type="text/css" />');
             }
         });
 
